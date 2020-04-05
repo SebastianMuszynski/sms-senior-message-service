@@ -1,0 +1,48 @@
+{ "from": "+48353181691", "body": "How many infected people are now in Poland?", "category": "info" }
+{ "from": "+48877727660", "body": "Can I go out for a walk to the park?", "category": "info" }
+{ "from": "+48541562432", "body": "When my grandchildren can come to visit me?", "category": "info" }
+{ "from": "+48497524561", "body": "Can I go to church?", "category": "info" }
+{ "from": "+48565070838", "body": "Is it safe for me to go to the pharmacy?", "category": "info" }
+{ "from": "+48190321202", "body": "Where can I get my retirement? ", "category": "info" }
+{ "from": "+48824037019", "body": "Is there a medicine for the coronavirus?", "category": "info" }
+{ "from": "+48718390468", "body": "How a work goes on a vaccine? ", "category": "info" }
+{ "from": "+48646901273", "body": "Is anybody infected in my city?", "category": "info" }
+{ "from": "+48207890628", "body": "How and where can I be tested for coronavirus?", "category": "info" }
+{ "from": "+48496567359", "body": "I ran out of the bread and milk, can you buy it for me?", "category": "daily_help" }
+{ "from": "+48522486578", "body": "I need to buy medicine.", "category": "daily_help" }
+{ "from": "+48247758232", "body": "I don't have toilet paper, soap and toothpaste, can you buy it for me?", "category": "daily_help" }
+{ "from": "+48643279087", "body": "I cannot walk out my dog.", "category": "daily_help" }
+{ "from": "+48114437657", "body": "My washing machine is broken and I need to fix it.", "category": "daily_help" }
+{ "from": "+48185172057", "body": "I cannot pay my bills.", "category": "daily_help" }
+{ "from": "+48688539439", "body": "I don't have food to feed my cat, I need to buy it.", "category": "daily_help" }
+{ "from": "+48783570599", "body": "My neighbours are too loud, I cannot sleep.", "category": "daily_help" }
+{ "from": "+48798929422", "body": "I don't have water in my sink, can you order a hydraulic?", "category": "daily_help" }
+{ "from": "+48542031805", "body": "My dog is sick, can a vet come to see it?", "category": "daily_help" }
+{ "from": "+48538395332", "body": "I am having problems with my back, I need a physiotherapist.", "category": "medical_assistance" }
+{ "from": "+48866941450", "body": "I am having a sore throat and fever, can I talk to a doctor?", "category": "medical_assistance" }
+{ "from": "+48945301901", "body": "I need to renew my prescription, and I don't know how.", "category": "medical_assistance" }
+{ "from": "+48776422386", "body": "I think I got infected, what should I do? ", "category": "medical_assistance" }
+{ "from": "+48880065561", "body": "I need to do my blood examination, where I should go?", "category": "medical_assistance" }
+{ "from": "+48854670145", "body": "My tooth hurts, what should I do?", "category": "medical_assistance" }
+{ "from": "+48921346321", "body": "I think I broke my arm, should I call an ambulance?", "category": "medical_assistance" }
+{ "from": "+48553125289", "body": "I feel pain in my chest.", "category": "medical_assistance" }
+{ "from": "+48126975995", "body": "Since a few days I feel dizzy and tired, what should I do?", "category": "medical_assistance" }
+{ "from": "+48155517110", "body": "I was supposed to go to the cardiologist today, can he call me instead?", "category": "medical_assistance" }
+{ "from": "+48728953900", "body": "I feel anxious all the time.", "category": "loneliness" }
+{ "from": "+48381651352", "body": "Can you have a conversation with me?", "category": "loneliness" }
+{ "from": "+48127759811", "body": "I feel sad, can I talk to someone?", "category": "loneliness" }
+{ "from": "+48824833229", "body": "I have depression, can I talk to a psychologist?", "category": "loneliness" }
+{ "from": "+48456253484", "body": "I can't sleep at night, I am stressing too much, can you help me somehow?", "category": "loneliness" }
+{ "from": "+48944867524", "body": "I feel alone can I talk to someone?", "category": "loneliness" }
+{ "from": "+48234350293", "body": "I am so sad I cannot go to the church.", "category": "loneliness" }
+{ "from": "+48736208034", "body": "I wanna talk to a priest but I can't.", "category": "loneliness" }
+{ "from": "+48568571211", "body": "I don't know what to do anymore at home alone.", "category": "loneliness" }
+{ "from": "+48486520329", "body": "What can I do to feel better and less anxious?", "category": "loneliness" }
+{ "from": "+48486520329", "body": "What can I do to feel better and less anxious?", "category": "loneliness" }
+{ "from": "+48944867524", "body": "S102", "category": "subscriptions" }
+{ "from": "+48234350293", "body": "S100", "category": "subscriptions" }
+{ "from": "+48736208034", "body": "S103", "category": "subscriptions" }
+{ "from": "+48568571211", "body": "S101", "category": "subscriptions" }
+{ "from": "+48234350293", "body": "S200", "category": "services" }
+{ "from": "+48736208034", "body": "S203", "category": "services" }
+{ "from": "+48944867524", "body": "S201", "category": "services" }

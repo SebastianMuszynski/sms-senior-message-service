@@ -1,0 +1,74 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='theme-color' content='#4DA5F4')
+    meta(name='csrf-token', content=_csrf)
+    title SMS: Senior Message Service
+    link(rel='shortcut icon', href='/favicon.png')
+    link(rel='stylesheet', href='/css/main.css')
+    block head
+
+  body
+    include partials/header
+
+    .container
+      include partials/flash
+
+      h1
+        i.fas.fa-sms.mr-3(style='font-size: 3rem')
+        | Senior Message Service
+
+      p.lead A text message-based platform for digitally excluded to help them during the coronavirus pandemic
+
+      .bg-photo(style='margin-bottom: 1rem !important; height: 450px; overflow: hidden;')
+        img(src='/img/grandma-phone.jpg', style='width: 100%; position: relative; top: -70px;')
+
+      .row.pt-2
+        .col-md-3
+          h4.mb-4 Categories
+          .category.mb-2
+            a.col-9.text-left.pl-0.btn.btn-sm.rounded(href='/messages', role='button', class=(title === 'All') ? 'btn-warning' : 'btn-primary')
+              i.fas.fa-list.mr-3.col-1
+              | All messages
+          .category.mb-2
+            a.col-9.text-left.pl-0.btn.btn-sm.rounded(href='/messages/info', role='button', class=(title === 'Info') ? 'btn-warning' : 'btn-primary')
+              i.fas.fa-info-circle.mr-3.col-1
+              | Info
+          .category.mb-2
+            a.col-9.text-left.pl-0.btn.btn-sm.rounded(href='/messages/daily_help', role='button', class=(title === 'Daily Help') ? 'btn-warning' : 'btn-primary')
+              i.fas.fa-people-carry.mr-3.col-1
+              | Daily Help
+          .category.mb-2
+            a.col-9.text-left.pl-0.btn.btn-sm.rounded(href='/messages/medical_assistance', role='button', class=(title === 'Medical Assistance') ? 'btn-warning' : 'btn-primary')
+              i.fas.fa-heartbeat.mr-3.col-1
+              | Medical Assistance
+          .category.mb-2
+            a.col-9.text-left.pl-0.btn.btn-sm.rounded(href='/messages/loneliness', role='button', class=(title === 'Loneliness') ? 'btn-warning' : 'btn-primary')
+              i.fas.fa-sad-tear.mr-3.col-1
+              | Loneliness
+          .category.mb-2
+            a.col-9.text-left.pl-0.btn.btn-sm.rounded(href='/messages/other', role='button', class=(title === 'Other') ? 'btn-warning' : 'btn-primary')
+              i.fas.fa-sad-tear.mr-3.col-1
+              | Other
+          hr
+          .category.mb-2
+            a.col-9.text-left.pl-0.btn.btn-sm.rounded(href='/messages/subscriptions', role='button', class=(title === 'Subscriptions') ? 'btn-warning' : 'btn-primary')
+              i.fas.fa-user-clock.mr-3.col-1
+              | Subscriptions
+          .category.mb-2
+            a.col-9.text-left.pl-0.btn.btn-sm.rounded(href='/messages/services', role='button', class=(title === 'Services') ? 'btn-warning' : 'btn-primary')
+              i.fas.fa-users-cog.mr-3.col-1
+              | Services
+
+        .col-md-9
+          block content
+
+    include partials/footer
+
+    script(src='/js/lib/jquery.min.js')
+    script(src='/js/lib/popper.min.js')
+    script(src='/js/lib/bootstrap.min.js')
+    script(src='/js/main.js')

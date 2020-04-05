@@ -1,0 +1,39 @@
+extends ../layout
+
+block content
+  h4.mb-4 Messages
+
+  if title == 'Other'
+    p(style='font-style: italic') Here you can see messages that were not automatically classified into any predefined category.
+  if title == 'Subscriptions'
+    p(style='font-style: italic') Subscriptions to automatic daily SMS updates:
+    p(style='font-style: italic') • S100 – daily news and updates about the government’s decisions regarding the coronavirus
+    p(style='font-style: italic') • S101 – daily info about the current number of infected people in your region, Poland, Europe and the entire world
+    p(style='font-style: italic') • S102 – the most important government and politicians tweets
+
+  each msg in messages
+    .message.shadow-sm.p-3.pl-4.pt-4.mb-4.bg-light.rounded(style=(moment().diff(msg.createdAt, 'minutes') < 45 ? 'background-color: #fff5eb !important' : undefined))
+      .recipient(style='color: black; font-weight: 500; font-size: 1rem')
+        i.fas.fa-clock
+        | #{moment(msg.createdAt).fromNow()}
+      .recipient(style='color: black; font-weight: 500; font-size: 1rem')
+        i.fas.fa-phone
+        | #{msg.from}
+      p.pt-3.pb-2.pl-2(style='font-size: 0.85rem; font-family: monaco, monospace;')
+        i.fas.fa-quote-left(style='color: #aaa; font-size: 0.8rem; position: relative; bottom: -0.5rem; left: -0.3rem;')
+        | #{msg.body}
+        i.fas.fa-quote-right(style='color: #aaa; font-size: 0.8rem; position: relative; top: -0.6rem; left: 0.4rem;')
+      if title != 'Subscriptions'
+        form(method='POST', action='/api/twilio')
+          .row
+            .col-10
+              input(type='hidden', name='_csrf', value=_csrf)
+              input(type='hidden', name='recipient', value=msg.from)
+              .input-group.mb-1.input-group-sm
+                .input-group-prepend
+                  span.input-group-text Answer
+                input.form-control.rounded(type='text', name='answer')
+            .col-2
+              button.btn.btn-danger.btn-sm.rounded.px-2(type='submit')
+                | Reply
+                i.fas.fa-reply.ml-2
